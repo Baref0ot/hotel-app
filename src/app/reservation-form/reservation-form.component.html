@@ -2,7 +2,10 @@
 
     <div>
         <label for="">Check-In Date:</label> 
-        <input type="date" formControlName="checkInDate" />  
+        <input type="date" formControlName="checkInDate" />
+        <div *ngIf="reservationForm.get('checkInDate')?.invalid && reservationForm.get('checkInDate')?.touched">
+            Check-In Dat is required.
+        </div>
     </div>
 
     <div>
