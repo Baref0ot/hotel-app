@@ -24,7 +24,8 @@ export class ReservationService {
 
     // add a reservation
     addReservation(reservation: Reservation): void {
-        this.reservations.push(reservation);     
+        this.reservations.push(reservation);
+        alert("Created reservation! Reservation Id: " + reservation.id);     
     }// end addReservation
 
 
