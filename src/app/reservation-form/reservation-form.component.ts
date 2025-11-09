@@ -8,6 +8,12 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class ReservationFormComponent {
 
+  // properties
   reservationForm: FormGroup = new FormGroup({});  
+
+  // methods
+  onSubmit() {
+
+  }// end onSubmit
 
 }
